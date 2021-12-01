@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.nav{
+			/*background-color: black;*/
+			display: flex;
+			align-items: center;
+			position: sticky;
+			top: 0px;
+		}
+		.nav::before{
+		content: "";
+		background-color: black;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		opacity: 0.5;
+		}
+
+		.nav ul{
+			margin-top: 10px;
+		}
+
+		.nav li{
+			list-style: none;
+			margin: 6px 6px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			color: white;
+		}
+		.nav li a{
+			color: white;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<script>
+
+		const age = 20;
+		switch (age) {
+			case 19:
+				console.log("Your age is 19, you are atupid")
+				break;
+
+			case 21:
+				console.log("Your age is 21, you are a stupid")
+				break;
+
+			case 20:
+				console.log("Your age is 20, you are a genius person!")
+				break;
+
+			default:
+				console.log("If you are 20, then you are a genius!")
+				break;
+		}
+
+		let name = "Rocky";
+		if (name == "Taha Hassan") {
+			console.log("You are a genius man!");
+		}
+		else if (name == "Rambo") {
+			console.log("You are a dumb person!")
+		}
+		else{
+			console.log("You are unpredictable person!")
+		}
+
+	</script>
+</body>
+</html>
